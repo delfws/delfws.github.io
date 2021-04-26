@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2021/04/26/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<span id="more"></span>
+
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>hello world</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>black-mac</title>
+    <url>/2020/09/03/black-mac/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>Windows系统使用VMware安装MacOS Catalina 10.15系统（黑苹果）的教程，提供MacOS 10.15系统镜像，虚拟机软件VMware Workstation Pro15.5，unlocker3.02和11.5版本package的darwin.iso下载。</p>
+<span id="more"></span>
+
+<h2 id="【安装准备】"><a href="#【安装准备】" class="headerlink" title="【安装准备】"></a>【安装准备】</h2><p>1 系统镜像：macOS.Catalina.10.15.0.cdr，已经修改来支持在 VMware Workstation Pro 中运行</p>
+<p>2 虚拟机软件：VMware Workstation Pro，版本号不低于 15.5，激活方法自行寻找。</p>
+<p>3 unlocker：解锁VMware的MacOS支持，版本号不低于 3.0.2</p>
+<p>4 darwin.iso：VMware Tools For Mac，用于解决 安装后，MacOS分辨率太小（1024*768像素），版本号不低于11.5 （注意，官方11.5已经不提供下载，您需要从本页面下载darwin.iso，低版本无法在新的MacOS系统中安装）</p>
+<p>以上软件我已经放入百度网盘的分享目录，您可以根据需要下载所需的文件。</p>
+<p>链接: <a href="https://pan.baidu.com/s/1Nlsa1IMhHElmv7TU2RiTrw">https://pan.baidu.com/s/1Nlsa1IMhHElmv7TU2RiTrw</a> 提取码: aygh</p>
+<p>具全操作过程请看：虚拟机VMware 15安装Mac Os10.14教程  过程都是一样的</p>
+<p>首先，安装 VMware Workstation Pro 15.5，如果你的版本是15.0，不要使用官方的在线升级功能，因为你可能会陷入重启，重新安装的循环。只需要下载最新的安装包，会自动覆盖升级，原来的激活信息会保留。其他版本，从重新安装15.5，再重新激活。</p>
+<h2 id="安装unlocker："><a href="#安装unlocker：" class="headerlink" title="安装unlocker："></a>安装unlocker：</h2><p>进入unlocker的目录，如果你是从Git上找到的unlocker，建议直接下载源码，不要下载 Releases 版本。进入源码根目录，右键，以管理员权限运行 win-install.cmd，等待命令执行完毕，解锁 VMware Workstation Pro 安装 MacOS的功能。</p>
+<h3 id="新建虚拟机："><a href="#新建虚拟机：" class="headerlink" title="新建虚拟机："></a>新建虚拟机：</h3><p>进入 VMware Workstation Pro 15.5，新建虚拟机，选择 macOS.Catalina.10.15.0.cdr，选择Apple MacOS，版本号选择10.15，这里的版本号一定要选择正确，运行虚拟机，如果顺利，就会进入读条。</p>
+<h3 id="安装MacOS"><a href="#安装MacOS" class="headerlink" title="安装MacOS:"></a>安装MacOS:</h3><p>安装分为两步骤，第一步，先进入Mac实用工具，选择磁盘工具，抹盘后，注意分区格式，需要选择 MacEXT日志 分区。</p>
+<p>第二步，退出磁盘工具，选择重新安装MacOS，点继续，按照提示，一步步安装MacOS即可。</p>
+<p>5 安装VMware Tools：<br>正常情况下，在第2步，安装 unlocker 时，会自动下载 darwin.iso，并复制到 VMware Tools 的根目录，但是由于官方源的失效，需要我们手动安装。先关闭MacOS，编辑虚拟机设置，在CDROM里，挂载 darwin.iso。然后再次启动MacOS，可以在桌面看到 VMware Tools 的盘符，双击，安装 VMware Tools 后即可。</p>
+<img data-src="/2020/09/03/black-mac/1.png" class="" title="VMware安装MacOS Catalina 10.15教程，附darwin.iso下载">
+
+<p>注意，这里要选择信任（先点击左下角的图标解锁），允许 系统 安装 VMware Tools。</p>
+<p>安装成功后，会自动重启电脑，你就可以看到熟悉的MacOS系统，赶紧全屏，体验一下新系统操作的感觉吧！</p>
+<p>【安装效果】</p>
+<p>这是在 VMware Workstation Pro 15.5 运行 MacOS Catalina 10.15 的截图：</p>
+<img data-src="/2020/09/03/black-mac/2.jpg" class="" title="VMware安装MacOS Catalina 10.15教程，附darwin.iso下载">
+
+<img data-src="/2020/09/03/black-mac/3.jpg" class="" title="VMware安装MacOS Catalina 10.15教程，附darwin.iso下载">
+
+]]></content>
+      <categories>
+        <category>黑苹果安装教程</category>
+      </categories>
+      <tags>
+        <tag>mac</tag>
+        <tag>VMware</tag>
+        <tag>黑苹果</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo</title>
+    <url>/2020/07/26/hexo/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="如何使用-hexo-next-建造炫酷的个人博客"><a href="#如何使用-hexo-next-建造炫酷的个人博客" class="headerlink" title="如何使用 hexo + next 建造炫酷的个人博客"></a>如何使用 hexo + next 建造炫酷的个人博客</h2><h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><p><a href="https://blog.csdn.net/u012294515/article/details/83094693">Hexo | NexT打造一个炫酷博客</a><br><a href="https://io-oi.me/tech/hexo-next-optimization/">打造个性超赞博客 Hexo + NexT + GitHub Pages 的超深度优化</a></p>
+
+        <div id="aplayer-SbasFJnl" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
+			  <script>
+				  var options = {"narrow":false,"autoplay":true,"showlrc":3,"mode":"single","mutex":true,"music":[{"title":"莫问归期","author":"蒋雪儿","pic":"/music/dengniguilai/dengniguilai.jpg","url":"/music/dengniguilai/dengniguilai.m4a","lrc":"/music/mowenguiqi/mowenguiqi.txt"}]};
+				  options.element = document.getElementById("aplayer-SbasFJnl");
+				  var ap = new APlayer(options);
+			    window.aplayers || (window.aplayers = []);
+				  window.aplayers.push(ap);
+			  </script>
+]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+</search>
